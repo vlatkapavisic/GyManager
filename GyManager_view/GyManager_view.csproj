@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3B530F0-E129-4FAA-887F-87B6F9E1DB20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GyManager</RootNamespace>
+    <AssemblyName>GyManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAMember.Designer.cs">
+      <DependentUpon>AddAMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAProgramAndAnInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAProgramAndAnInstructor.Designer.cs">
+      <DependentUpon>AddAProgramAndAnInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAMember.Designer.cs">
+      <DependentUpon>DeleteAMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollAProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollAProgram.Designer.cs">
+      <DependentUpon>EnrollAProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GyManagerApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GyManagerApp.Designer.cs">
+      <DependentUpon>GyManagerApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireAndHire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireAndHire.Designer.cs">
+      <DependentUpon>FireAndHire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayMembership.Designer.cs">
+      <DependentUpon>PayMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaySalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaySalary.Designer.cs">
+      <DependentUpon>PaySalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnenrollAProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnenrollAProgram.Designer.cs">
+      <DependentUpon>UnenrollAProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllInstructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllInstructors.Designer.cs">
+      <DependentUpon>ViewAllInstructors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllMembers.Designer.cs">
+      <DependentUpon>ViewAllMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllPrograms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllPrograms.Designer.cs">
+      <DependentUpon>ViewAllPrograms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCashRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCashRegister.Designer.cs">
+      <DependentUpon>ViewCashRegister.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAMember.resx">
+      <DependentUpon>AddAMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAProgramAndAnInstructor.resx">
+      <DependentUpon>AddAProgramAndAnInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAMember.resx">
+      <DependentUpon>DeleteAMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollAProgram.resx">
+      <DependentUpon>EnrollAProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GyManagerApp.resx">
+      <DependentUpon>GyManagerApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireAndHire.resx">
+      <DependentUpon>FireAndHire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayMembership.resx">
+      <DependentUpon>PayMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaySalary.resx">
+      <DependentUpon>PaySalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UnenrollAProgram.resx">
+      <DependentUpon>UnenrollAProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllInstructors.resx">
+      <DependentUpon>ViewAllInstructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllMembers.resx">
+      <DependentUpon>ViewAllMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllPrograms.resx">
+      <DependentUpon>ViewAllPrograms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCashRegister.resx">
+      <DependentUpon>ViewCashRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\GyManager_model.csproj">
+      <Project>{d0889e39-35d6-4b72-a432-0de84931d159}</Project>
+      <Name>GyManager_model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GyManager_controller\GyManager_controller.csproj">
+      <Project>{2605e335-4359-4410-a165-286b10d39070}</Project>
+      <Name>GyManager_controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GyManager_observer\GyManager_observer.csproj">
+      <Project>{48eb7307-cc7f-4392-bca3-ff0e64ea61e4}</Project>
+      <Name>GyManager_observer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3TgfZXI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hdhsIjt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CT_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_md2v8yqahl1r2jdszo1_1280.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
